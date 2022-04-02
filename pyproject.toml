@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "rubrix-blogs"
+version = "0.1.0"
+description = "Blogs for the Rubrix website."
+authors = ["David Berenstein <david.berenstein@pandoraintelligence.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+rubrix = "^0.13.0"
+classy-classification = "^0.3.6"
+concise-concepts = "0.4.1"
+spacy = "^3.2.4"
+feedparser = "^6.0.8"
+
+[tool.poetry.dev-dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
