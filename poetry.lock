@@ -184,7 +184,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
 name = "concise-concepts"
-version = "0.4.1"
+version = "0.4.3"
 description = "This repository contains an easy and intuitive approach to few-shot NER using most similar expansion over spaCy embeddings. Now with entity confidence scores!"
 category = "main"
 optional = false
@@ -1724,7 +1724,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "326dee3661b9400c8cc5c8f37d8e53995e1dd332a13cd5372a4413025204c016"
+content-hash = "98de1fa6792d51abe726bffae5857193ae1c9c06200bd5d707c8266b55edd940"
 
 [metadata.files]
 appnope = [
@@ -1873,8 +1873,8 @@ colorama = [
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
 ]
 concise-concepts = [
-    {file = "concise-concepts-0.4.1.tar.gz", hash = "sha256:33ecb986e636740bcf79d5f523058b71009be7ed76e4a99e1dc0aab40617226d"},
-    {file = "concise_concepts-0.4.1-py3-none-any.whl", hash = "sha256:70a8ee58f59c668b02110b3c756819e55776847fabb4589bc14e47c26e89d8a9"},
+    {file = "concise-concepts-0.4.3.tar.gz", hash = "sha256:00e927fea297e298c797eba4bd56096ee67ba48d12eeea81d971c5791017b7d6"},
+    {file = "concise_concepts-0.4.3-py3-none-any.whl", hash = "sha256:c721e5cc702e1bdbb1ff4eee13606b4c7f7e465886b611858827922e72e0a39a"},
 ]
 cymem = [
     {file = "cymem-2.0.6-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:700540b68e96a7056d0691d467df2bbaaf0934a3e6fe2383669998cbee19580a"},

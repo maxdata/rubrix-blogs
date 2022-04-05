@@ -9,7 +9,7 @@ license = "MIT"
 python = "^3.8"
 rubrix = "^0.13.0"
 classy-classification = "^0.3.6"
-concise-concepts = "0.4.1"
+concise-concepts = "^0.4.3"
 spacy = "^3.2.4"
 feedparser = "^6.0.8"
 
