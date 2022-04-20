@@ -7,11 +7,12 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-rubrix = "^0.13.0"
+rubrix = "0.13.2"
 classy-classification = "^0.3.6"
-concise-concepts = "^0.4.3"
+concise-concepts = "^0.5.0"
 spacy = "^3.2.4"
 feedparser = "^6.0.8"
+plotly = "^5.7.0"
 
 [tool.poetry.dev-dependencies]
 jupyter = "^1.0.0"

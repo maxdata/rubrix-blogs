@@ -184,7 +184,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
 name = "concise-concepts"
-version = "0.4.3"
+version = "0.5.0"
 description = "This repository contains an easy and intuitive approach to few-shot NER using most similar expansion over spaCy embeddings. Now with entity confidence scores!"
 category = "main"
 optional = false
@@ -876,6 +876,18 @@ optional = false
 python-versions = ">=3.7"
 
 [[package]]
+name = "plotly"
+version = "5.7.0"
+description = "An open-source, interactive data visualization library for Python"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+six = "*"
+tenacity = ">=6.2.0"
+
+[[package]]
 name = "preshed"
 version = "3.0.6"
 description = "Cython hash table that trusts the keys are pre-hashed"
@@ -1130,7 +1142,7 @@ idna2008 = ["idna"]
 
 [[package]]
 name = "rubrix"
-version = "0.13.0"
+version = "0.13.2"
 description = "Open-source tool for exploring, labeling, and monitoring data for NLP projects."
 category = "main"
 optional = false
@@ -1145,7 +1157,7 @@ tqdm = ">=4.27.0"
 wrapt = ">=1.13.0,<1.14.0"
 
 [package.extras]
-server = ["fastapi (>=0.63.0,<0.64.0)", "opensearch-py (>=1.0.0,<1.1.0)", "uvicorn[standard] (>=0.15.0,<0.18.0)", "smart-open", "brotli-asgi (>=1.1.0,<1.2.0)", "Deprecated (>=1.2.0,<1.3.0)", "loguru (>=0.6.0,<0.7.0)", "luqum (>=0.11.0,<0.12.0)", "scikit-learn (>=0.24.2)", "stopwordsiso (>=0.6.1,<0.7.0)", "aiofiles (>=0.6.0,<0.7.0)", "PyYAML (>=5.4.1,<5.5.0)", "python-multipart (>=0.0.5,<0.1.0)", "python-jose[cryptography] (>=3.2.0,<3.3.0)", "passlib[bcrypt] (>=1.7.4,<1.8.0)", "hurry.filesize", "psutil (>=5.8.0,<5.9.0)"]
+server = ["fastapi (>=0.63.0,<0.64.0)", "opensearch-py (>=1.0.0,<1.1.0)", "uvicorn[standard] (>=0.15.0,<0.18.0)", "smart-open", "brotli-asgi (>=1.1.0,<1.2.0)", "Deprecated (>=1.2.0,<1.3.0)", "luqum (>=0.11.0,<0.12.0)", "scikit-learn (>=0.24.2)", "stopwordsiso (>=0.6.1,<0.7.0)", "aiofiles (>=0.6.0,<0.7.0)", "PyYAML (>=5.4.1,<5.5.0)", "python-multipart (>=0.0.5,<0.1.0)", "python-jose[cryptography] (>=3.2.0,<3.3.0)", "passlib[bcrypt] (>=1.7.4,<1.8.0)", "hurry.filesize", "psutil (>=5.8.0,<5.9.0)"]
 
 [[package]]
 name = "sacremoses"
@@ -1418,6 +1430,17 @@ pure-eval = "*"
 
 [package.extras]
 tests = ["pytest", "typeguard", "pygments", "littleutils", "cython"]
+
+[[package]]
+name = "tenacity"
+version = "8.0.1"
+description = "Retry code until it succeeds"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+doc = ["reno", "sphinx", "tornado (>=4.5)"]
 
 [[package]]
 name = "terminado"
@@ -1724,7 +1747,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "98de1fa6792d51abe726bffae5857193ae1c9c06200bd5d707c8266b55edd940"
+content-hash = "16f95525469a92571efee3ce012efbb6ace016fce92809a3afadf3a92b038fdb"
 
 [metadata.files]
 appnope = [
@@ -1873,8 +1896,8 @@ colorama = [
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
 ]
 concise-concepts = [
-    {file = "concise-concepts-0.4.3.tar.gz", hash = "sha256:00e927fea297e298c797eba4bd56096ee67ba48d12eeea81d971c5791017b7d6"},
-    {file = "concise_concepts-0.4.3-py3-none-any.whl", hash = "sha256:c721e5cc702e1bdbb1ff4eee13606b4c7f7e465886b611858827922e72e0a39a"},
+    {file = "concise-concepts-0.5.0.tar.gz", hash = "sha256:b6ceeed26166e235bbc8dfce4511b85cf3911e9d9f231cd24bdf82cc3a965ef1"},
+    {file = "concise_concepts-0.5.0-py3-none-any.whl", hash = "sha256:2cf2d47b5ef0cfcf8bb4b2557f880c864503e2cd2a2c33ea21107d5cb5d70dba"},
 ]
 cymem = [
     {file = "cymem-2.0.6-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:700540b68e96a7056d0691d467df2bbaaf0934a3e6fe2383669998cbee19580a"},
@@ -2240,6 +2263,10 @@ pillow = [
     {file = "Pillow-9.0.1-pp38-pypy38_pp73-win_amd64.whl", hash = "sha256:a9f44cd7e162ac6191491d7249cceb02b8116b0f7e847ee33f739d7cb1ea1f70"},
     {file = "Pillow-9.0.1.tar.gz", hash = "sha256:6c8bc8238a7dfdaf7a75f5ec5a663f4173f8c367e5a39f87e720495e1eed75fa"},
 ]
+plotly = [
+    {file = "plotly-5.7.0-py2.py3-none-any.whl", hash = "sha256:3a35131762c6567813012462e1d496e1d3898f56ab3d386b32f103f7f0c79cf1"},
+    {file = "plotly-5.7.0.tar.gz", hash = "sha256:15ab20e9ed8b55f669b3d35e186eb48f9e1fe07321a1337b8b7df8d3573d265a"},
+]
 preshed = [
     {file = "preshed-3.0.6-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:66a71ced487516cf81fd0431a3a843514262ae2f33e9a7688b87562258fa75d5"},
     {file = "preshed-3.0.6-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:6c98f725d8478f3ade4ab1ea00f50a92d2d9406d37276bc46fd8bab1d47452c4"},
@@ -2577,8 +2604,8 @@ rfc3986 = [
     {file = "rfc3986-1.5.0.tar.gz", hash = "sha256:270aaf10d87d0d4e095063c65bf3ddbc6ee3d0b226328ce21e036f946e421835"},
 ]
 rubrix = [
-    {file = "rubrix-0.13.0-py3-none-any.whl", hash = "sha256:e7125ffeaad0c312e67733d83cc44d41b8e73b90b56d0721887ce24dd442fd89"},
-    {file = "rubrix-0.13.0.tar.gz", hash = "sha256:fae12c185f9ec98a108ed0ed22589a8882ccdc52860bd494fec63a379c06e50d"},
+    {file = "rubrix-0.13.2-py3-none-any.whl", hash = "sha256:2194306619048670b60dd9da4a3e2e25888f4009ca985673ff36d62f46afa8d8"},
+    {file = "rubrix-0.13.2.tar.gz", hash = "sha256:5d1f723ac56c811c1e1935855c369362ba7adaa8f6061a394b03d646e7124dab"},
 ]
 sacremoses = [
     {file = "sacremoses-0.0.49-py3-none-any.whl", hash = "sha256:33ca6d4e125271b9201cc7fdf7f03f3ffdd358ee6dd8079c0432811d82da5377"},
@@ -2652,6 +2679,8 @@ sentencepiece = [
     {file = "sentencepiece-0.1.96-cp310-cp310-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:e9e9fe8094ca57549d801e9a2017ac5c24108bbf485ea4f8994a72e8e96ee135"},
     {file = "sentencepiece-0.1.96-cp310-cp310-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:b77d27f59d515c43b61745b8173fbe7c7b3014b14b3702a75bf1793471e7def6"},
     {file = "sentencepiece-0.1.96-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:1dac8c2ad02b5ebc1179c0a14cbc7d7c6f4fd73d4dd51820626402d0aefc974e"},
+    {file = "sentencepiece-0.1.96-cp310-cp310-win32.whl", hash = "sha256:3028699bdb2fb0230804f3b8a617fe3af22f5c5a56416419b31a7da5e7bf83bc"},
+    {file = "sentencepiece-0.1.96-cp310-cp310-win_amd64.whl", hash = "sha256:203443a7bd4295b6a3695787235abe0e77d4c369d7156a6b9a397c540a38bd27"},
     {file = "sentencepiece-0.1.96-cp35-cp35m-macosx_10_6_x86_64.whl", hash = "sha256:e8ec5bb6777e2060e1499750c50e1b69dca5a0f80f90f2c66656c5f3e5244593"},
     {file = "sentencepiece-0.1.96-cp36-cp36m-macosx_10_6_x86_64.whl", hash = "sha256:99ea2d9db19e63a2d17d5dc64f9ace83fb9308a735be05a1aaf98eb4b496fba7"},
     {file = "sentencepiece-0.1.96-cp36-cp36m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:aeb090ad462833df03af1debce4ae607a2766ef861f992003ad0c56d074ab805"},
@@ -2778,6 +2807,10 @@ srsly = [
 stack-data = [
     {file = "stack_data-0.2.0-py3-none-any.whl", hash = "sha256:999762f9c3132308789affa03e9271bbbe947bf78311851f4d485d8402ed858e"},
     {file = "stack_data-0.2.0.tar.gz", hash = "sha256:45692d41bd633a9503a5195552df22b583caf16f0b27c4e58c98d88c8b648e12"},
+]
+tenacity = [
+    {file = "tenacity-8.0.1-py3-none-any.whl", hash = "sha256:f78f4ea81b0fabc06728c11dc2a8c01277bfc5181b321a4770471902e3eb844a"},
+    {file = "tenacity-8.0.1.tar.gz", hash = "sha256:43242a20e3e73291a28bcbcacfd6e000b02d3857a9a9fff56b297a27afdc932f"},
 ]
 terminado = [
     {file = "terminado-0.13.3-py3-none-any.whl", hash = "sha256:874d4ea3183536c1782d13c7c91342ef0cf4e5ee1d53633029cbc972c8760bd8"},
